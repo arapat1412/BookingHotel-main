@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool View Studio with Kitchenette</title>
+    <link rel="stylesheet" href="/user/styles_user/view.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Khách sạn Valentine Luxury 31 Bùi Viện (Valentine Luxury hotel - 31 Bui Vien Street)
+        </div>
+        <div class="main-content">
+            <div class="image-section">
+                <img alt="View of a modern studio apartment with a large bed, blue accents, and a window with a city view" src="/user/image_user/buivien.png"/>
+            </div>
+            <div class="details-section">
+                <h3>Mô tả:</h3>
+                <p>Phòng rất mát, rất vip, cảnh sắc đẹp, phòng ấm, màu đẹp có ghế tình yêu</p>
+                <h3>Cơ sở vật chất:</h3>
+                <ul>
+                    <li><i class="fas fa-bed"></i> 1 giường đôi lớn &amp; 1 giường sofa</li>
+                    <li><i class="fas fa-ruler-combined"></i> Diện tích phòng: 19 m²</li>
+                    <li><i class="fas fa-swimming-pool"></i> Hướng Bể bơi</li>
+                    <li><i class="fas fa-umbrella-beach"></i> Ban công/sân hiên</li>
+                    <li><i class="fas fa-smoking-ban"></i> Không hút thuốc</li>
+                    <li><i class="fas fa-shower"></i> Bồn tắm/vòi sen riêng</li>
+                    <li><i class="fas fa-swimmer"></i> Bể bơi riêng</li>
+                    <li><i class="fas fa-utensils"></i> Bếp nhỏ</li>
+                    <li><i class="fas fa-wifi"></i> Wifi miễn phí</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="thumbnails">
+                <img alt="Thumbnail image 1" src="/user/image_user/buivien2.png" />
+                <img alt="Thumbnail image 2" src="/user/image_user/buivien3.png" />
+                <img alt="Thumbnail image 3" src="/user/image_user/buivien4.png" />
+                <img alt="Thumbnail image 4" src="/user/image_user/buivien6.png" />
+                <img alt="Thumbnail image 5" src="/user/image_user/buivien7.png" />
+                <img alt="Thumbnail image 6" src="/user/image_user/buivien8.png" />
+                <img alt="Thumbnail image 7" src="/user/image_user/buivien9.png" />
+                <img alt="Thumbnail image 8" src="/user/image_user/buivien10.webp" />
+                <img alt="Thumbnail image 9" src="/user/image_user/buivien11.jpg" />
+                <img alt="Thumbnail image 10" src="/user/image_user/buivien12.jpg" />
+                <img alt="Thumbnail image 11" src="/user/image_user/buivien13.jpg" />
+                <img alt="Thumbnail image 12" src="/user/image_user/buivien16.jpg" />
+                <img alt="Thumbnail image 13" src="/user/image_user/buivien14.jpg" />
+            </div>
+        </div>
+
+        
+
+        <!-- Modal to display larger images -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage" />
+        </div>
+        
+        <script>
+            function openModal(src) {
+                document.getElementById("imageModal").style.display = "flex"; // Sử dụng flexbox để căn giữa
+                document.getElementById("modalImage").src = src;
+            }
+
+            function closeModal() {
+                document.getElementById("imageModal").style.display = "none";
+            }
+
+            // Gán sự kiện click cho tất cả các ảnh thumbnail
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => {
+                img.addEventListener('click', () => {
+                    openModal(img.src);
+                });
+            });
+
+            // Đóng modal khi nhấp ra ngoài hình ảnh
+            window.addEventListener('click', (event) => {
+                const modal = document.getElementById("imageModal");
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

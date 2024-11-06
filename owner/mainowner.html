@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGOBEE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <!-- css owner -->
+    <link rel="stylesheet" href="/style/owner.css">
+
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- icon bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container-fluid">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-brand">
+                        <img src="/images/Logo.png" alt="" class="">
+                        AGOBEE
+                    </div>
+                    <h4 class="">Chào bạn Amigus</h4>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="QLKS-tab" data-bs-toggle="tab" data-bs-target="#QLKS"
+                                        type="button" role="tab" aria-controls="QLKS" aria-selected="true">Quản Lý Khách
+                                        Sạn</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="TTCN-tab" data-bs-toggle="tab" data-bs-target="#TTCN"
+                                        type="button" role="tab" aria-controls="TTCN" aria-selected="false">Thông Tin Cá
+                                        Nhân</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="DT-tab" data-bs-toggle="tab" data-bs-target="#DT"
+                                        type="button" role="tab" aria-controls="DT" aria-selected="false">Doanh
+                                        Thu</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="DG-tab" data-bs-toggle="tab" data-bs-target="#DG"
+                                        type="button" role="tab" aria-controls="DG" aria-selected="false">Đánh
+                                        Giá</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                                        data-bs-target="#disabled-tab-pane" type="button" role="tab"
+                                        aria-controls="disabled-tab-pane" aria-selected="false">Đăng Xuất</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="noidung">
+        <div class="container p-4">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="QLKS" role="tabpanel" aria-labelledby="QLKS-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-6 p-2">
+                            <div class="card h-100">
+                                <img src="/images/testks/db8c6d7cd72d241d78f3ceda18d4311c.jpg"
+                                    class="card-img-top h-100" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Pharaoh Hotel</h4>
+                                    <div class="nhom-button">
+                                        <a href="managehotel.html"> <button type="button"
+                                                class="btn btn-primary btn-sm">Quản
+                                                Lý</button>
+                                        </a>
+
+                                        <a href="/owner/editHotel.html"><button type="button"
+                                                class="btn btn-secondary btn-sm">Sửa</button></a>
+                                        <button type="button" class="btn btn-danger btn-sm">Đóng Cửa</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 p-2">
+                            <div class="card h-100">
+                                <img src="/images/testks/images.jfif" class="card-img-top h-100" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Nhà bà 4</h4>
+                                    <div class="nhom-button">
+                                        <button type="button" class="btn btn-primary btn-sm">Quản Lý</button>
+                                        <button type="button" class="btn btn-secondary btn-sm">Sửa</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Đóng Cửa</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 p-2">
+                            <div class="card h-100">
+                                <img src="/images/testks/goc-kham-pha-3-khach-san-co-tuoi-doi-gia-nhat-sai-gon_6172680405e4f.jpeg"
+                                    class="card-img-top h-100" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Boutique ShinSam Hotel</h4>
+                                    <div class="nhom-button">
+                                        <button type="button" class="btn btn-primary btn-sm">Quản Lý</button>
+                                        <button type="button" class="btn btn-secondary btn-sm">Sửa</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Đóng cửa</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 p-2">
+                            <div class="card h-100" style="cursor: pointer;" data-bs-toggle="modal"
+                                data-bs-target="#add-hotel-modal">
+                                <img alt="" src="/images/plus-sign.png" class="card-img-top p-4" />
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        Thêm khách sạn mới
+                                    </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="add-hotel-modal" tabindex="-1" aria-labelledby="add-hotel-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Thêm Khách Sạn Mới</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="formAddHotel" class="row g-3 needs-validation" novalidate>
+                                        <div style="font-weight: 600;">Ảnh khách sạn</div>
+                                        <div class="col-12" id="add-hotel-image">
+                                            <div class="zone-display-image scroll-1 border" id="displayHotelImage">
+                                                <div class="m-1" id="btnAddImage">
+                                                    <label for="nutThemAnh"><i
+                                                            class="bi bi-plus-square icon-add-room"></i></label>
+                                                </div>
+                                            </div>
+                                            <input type="file" class="form-control d-none" id="nutThemAnh"
+                                                onchange="displayAnh(event, 'displayHotelImage', 'btnAddImage')"
+                                                required />
+                                            <div class="invalid-feedback">
+                                                hãy thêm ảnh cho khách sạn
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="add-hotel-type" class="form-label">Loại Hình</label>
+                                            <select class="form-select" id="add-hotel-type" required>
+                                                <option selected disabled value="">Choose...</option>
+                                                <option>...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                hãy chọn loại hình
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="add-hotel-city" class="form-label">Thành Phố</label>
+                                            <select class="form-select" id="add-hotel-city" required>
+                                                <option selected disabled value="">Choose...</option>
+                                                <option>...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                hãy chọn thành phố
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="add-hotel-phone" class="form-label">Số Điện Thoại</label>
+                                            <input type="text" class="form-control" id="add-hotel-phone" required>
+                                            <div class="invalid-feedback">
+                                                hãy nhập số điện thoại
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="add-hotel-name" class="form-label">Tên Khách Sạn</label>
+                                            <input type="text" class="form-control" id="add-hotel-name" required>
+                                            <div class="invalid-feedback">
+                                                hãy nhập tên khách sạn
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="add-hotel-address" class="form-label">Địa Chỉ</label>
+                                            <input type="text" class="form-control" id="add-hotel-address" required>
+                                            <div class="invalid-feedback">
+                                                hãy nhập địa chỉ
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="add-hotel-describe" class="form-label">Mô tả khách sạn</label>
+                                            <textarea name="" class="form-control" id="add-hotel-describe"
+                                                style="height: 120px;" required></textarea>
+                                            <div class="invalid-feedback">
+                                                hãy nhập mô tả khách sạn
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="add-hotel-pm1" class="form-label">Phương thức thanh toán</label>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="add-hotel-pm1">
+                                                <label class="form-check-label" for="add-hotel-pm1">Cho phép thanh toán
+                                                    tại khách sạn</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-2">
+                                            <div style="font-weight: 600;">Momo</div>
+                                            <div class="row d-flex align-items-center">
+                                                
+                                                <div class="col-md-7 col-12">
+                                                    <label for="add-hotel-pm2" class="form-label">Số momo</label>
+                                                    <input type="text" class="form-control" id="add-hotel-pm2"
+                                                        required>
+                                                    <div class="invalid-feedback">
+                                                        hãy nhập số momo
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-5 col-12 mt-2">
+                                                    <div class="d-flex justify-content-center mb-2">
+                                                        <img id="selectedMomo"
+                                                            src="/images/placeholder-image.png"
+                                                            class="rounded"
+                                                            style="width: 100px; height: 100px; object-fit: cover;"/>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <div data-mdb-ripple-init class="btn btn-info btn-sm">
+                                                            <label class="form-label text-white m-1"
+                                                                for="QRMomo">QR Momo</label>
+                                                            <input type="file" class="form-control d-none"
+                                                                id="QRMomo"
+                                                                onchange="displaySelectedImage(event, 'selectedMomo')" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 p-2">
+                                            <div style="font-weight: 600;">Ngân hàng</div>
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-md-7 col-12">
+                                                    <label for="add-hotel-pm3" class="form-label">Số ngân hàng</label>
+                                                    <input type="text" class="form-control" id="add-hotel-pm3"
+                                                        required>
+                                                    <div class="invalid-feedback">
+                                                        hãy nhập số momo
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-5 col-12 mt-2">
+                                                    <div class="d-flex justify-content-center mb-2">
+                                                        <img id="selectedBank"
+                                                            src="/images/placeholder-image.png"
+                                                            class="rounded"
+                                                            style="width: 100px; height: 100px; object-fit: cover;"/>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <div data-mdb-ripple-init class="btn btn-info btn-sm">
+                                                            <label class="form-label text-white m-1"
+                                                                for="QRBank">QR Bank</label>
+                                                            <input type="file" class="form-control d-none"
+                                                                id="QRBank"
+                                                                onchange="displaySelectedImage(event, 'selectedBank')" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button class="btn btn-primary" type="submit">Lưu</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button onclick="resetForm('formAddHotel')" type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="tab-pane fade" id="TTCN" role="tabpanel" aria-labelledby="TTCN-tab" tabindex="0">
+                    <h1>Thông tin cá nhân sẽ ở đây</h1>
+                </div>
+
+
+
+
+                <div class="tab-pane fade" id="DT" role="tabpanel" aria-labelledby="DT-tab" tabindex="0">
+                    <h1>Doanh thu sẽ ở đây</h1>
+                </div>
+
+
+
+
+                <div class="tab-pane fade" id="DG" role="tabpanel" aria-labelledby="DG-tab" tabindex="0">
+                    <h1>Đánh giá sẽ ở đây</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/javascript/owner.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
